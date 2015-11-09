@@ -8,7 +8,7 @@ function runScript() {
 				jQuery(this).toggleClass('active')
 			})
 
-			$("head").append("<link rel='stylesheet' href='https://brachamul.github.io/sequoia-image-animator/styles.css' type='text/css' media='screen'>");
+			jQuery("head").append("<link rel='stylesheet' href='https://brachamul.github.io/sequoia-image-animator/styles.css' type='text/css' media='screen'>");
 
 		})
 
