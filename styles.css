@@ -3,7 +3,8 @@
 	overflow: hidden;
 	transition: max-height 2s ease-in-out;
 	position: relative;
-	border-radius: 3px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px -2px;
 }
 
 .bigimage-deploys:hover { cursor: pointer; }
