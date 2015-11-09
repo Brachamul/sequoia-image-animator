@@ -1,8 +1,14 @@
 .bigimage-deploys {
-	max-height: 120px; overflow: hidden; transition: max-height 2s ease-in-out; position: relative; border-radius: 3px;
-	}
+	max-height: 120px;
+	overflow: hidden;
+	transition: max-height 2s ease-in-out;
+	position: relative;
+	border-radius: 3px;
+}
 
-	.bigimage-deploys.active { max-height: 2000px; }
+.bigimage-deploys:hover { cursor: pointer; }
+
+.bigimage-deploys.active { max-height: 2000px; }
 
 .bigimage-deploys:after {
 	transition: all 2s;
