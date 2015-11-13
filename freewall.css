@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
+#freewall { margin-left: 15px; font-family: "Open Sans", sans-serif; }
+
+#frewall * { box-sizing: border-box; }
+
+.brick {
+	width: 200px;
+	height: 255px;
+	transition: .6s transform !important;
+	perspective: 1000;
+}
+
+.brick.large {
+	width: 300px;
+	height: 225px;
+}
+
+.brick.video { width: 400px; height: 225px; }
+.brick.video .back { padding: 0; }
+.brick.video .back img { height: 100%; width: 100%; }
+.brick .front img:first-child { margin-top: 5px; }
+
+.brick .title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em; 
+}
+
+.brick hr { border: 1px solid #ccc; }
+
+/* flip the pane when hovered */
+.brick:hover .flipper,
+.brick.active .flipper {
+	transform: rotateY(180deg);
+	background-color: rgba(255,255,255,0.8); 
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	border: 1px solid #ccc;
+	box-shadow: 0px 1px 5px 0px #ccc;
+	height: 100%; width: 100%;
+	box-sizing: border-box;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	padding: 6px 9px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/* front pane, placed above back */
+.front { transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back { transform: rotateY(180deg); }
+
+.brick:hover,
+.brick.active { cursor: pointer; transform: rotate(-2deg) scale(1.25); z-index: 100; }
+.brick.active:after { content: "x"; position: absolute; top: 0; right: .5em; color: white; text-shadow: 0px 1px 5px black; font-size: 2em; }

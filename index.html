@@ -1,16 +1,162 @@
-
 <!DOCTYPE html>
+
 <html>
 
 <head>
 <meta charset="UTF-8">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="http://brachamul.github.io/sequoia-image-animator/freewall.js"></script>
+<link href="http://brachamul.github.io/sequoia-image-animator/freewall.css" rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="mybody">
 
-<h1> OH YEAH ! </h1>	
+<h1> OH YEAH ! </h1>
+
+	<div id="freewall">
+		
+		<div class="brick video" ontouchstart="this.classList.toggle('hover');">
+
+			<div class="flipper">
+				<div class="front">
+					<img src="media/ted.png"/>
+					<hr>
+					<div class="title">Comment apprendre aux ordinateurs à comprendre des images</div>
+				</div>
+				<div class="back" >
+					<a href="https://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=fr" target="_blank">
+						<img src="media/fei-fei-li.png"/>
+					</a>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick video" ontouchstart="this.classList.toggle('hover');">
+
+			<div class="flipper">
+				<div class="front">
+					<img src="media/ted.png"/>
+					<hr>
+					<div class="title">Les conséquences à la fois merveilleuses et effrayantes des machines qui apprennent</div>
+				</div>
+				<div class="back" >
+					<a href="https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=fr" target="_blank">
+						<img src="media/jeremy-howard.png"/>
+					</a>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick large" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="brick" ontouchstart="this.classList.toggle('hover');">
+		
+			<div class="flipper">
+				<div class="front">
+					<div class="title">Facebook sait que le bébé se lave les dents</div>
+				</div>
+				<div class="back">
+					<div class="title">Contenu au dos !! Yeah baby come on !</div>
+				</div>
+			</div>
+	
+		</div>
+
+
+	</div>
+
+<script>
+	$(function() {	
+		var wall = new freewall("#freewall");
+		wall.fitWidth();
+		wall.reset({
+			selector: '.brick',
+			animate: true,
+			onResize: function() {
+				wall.fitWidth();
+			}
+		});
+		
+		wall.container.find('.brick span').load(function() {
+			wall.fitWidth();
+		});
+
+		// for mobile
+		$('.brick').click(function(){
+			$(this).toggleClass('active')
+		})
+
+		$('.brick:after').click(function(){
+			$(this).removeClass('active')
+		})
+
+	});
+</script>
 
 </body>
 
