@@ -5,8 +5,8 @@
 #freewall * { box-sizing: border-box; }
 
 .brick {
-	width: 200px;
-	height: 255px;
+	width: 300px;
+	height: 225px;
 	transition: .6s transform !important;
 	perspective: 1000;
 }
@@ -47,7 +47,7 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-	padding: 6px 9px;
+	padding: .6em .9em;
 	position: absolute;
 	top: 0;
 	left: 0;

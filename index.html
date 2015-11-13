@@ -9,9 +9,133 @@
 <link href="http://brachamul.github.io/sequoia-image-animator/freewall.css" rel='stylesheet' type='text/css'>
 </head>
 
-<body style="width: 800px; margin: auto; ">
+<body style="width: 600px; margin: auto; line-height: 1.5; font-family: 'Open Sans', sans-serif;">
 
-<h1> OH YEAH ! </h1>
+<h1>Comment élever un ordinateur curieux : la révolution du <em>Machine Learning</em></h1>
+
+<hr>
+
+<h2 class="togglable">Introduction</h2>
+
+<div class="h2-content">
+
+<p>
+	Arthur Samuel était convaincu que faire jouer un ordinateur à un jeu de plateau était une excellente manière de <strong>faire progresser l'intelligence artificielle</strong>. Après avoir développé un algorithme permettant d'évaluer des coups à jouer (<a target="_blank" href="https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta">l'élagage alpha-beta</a>), il se retrouve freiné par le <strong>manque de puissance</strong> de son ordinateur. Celui-ci n'est alors capable de prévoir "que" quelques coups d'avance.</p>
+
+<p>
+	Il réalise alors que, si son ordinateur pouvait <strong>garder en mémoire</strong> ses parties précédentes, il pourrait identifier rapidement les "branches" de coups intéressantes, et éliminer les moins optimales. Il peut ainsi<strong> décupler la compétence</strong> de son programme, en remplaçant la puissance brute par l'expérience.</p>
+
+<p>
+	<img src="media/arthur-samuel.jpg"/></p>
+
+<p>
+	En 1959, il présente ses résultats appliqués au <strong>jeu de dames</strong>. Son ordinateur est alors <strong>capable de battre </strong>occasionnellement des joueurs amateurs.</p>
+
+<p>
+	Ce <strong>principe d'expérience</strong> est fondamental à l'idée de "Machine Learning", ou "Apprentissage Automatique" en Français.</p>
+
+<p>
+	Pour l'illustrer à nouveau, voici une explication contenant des chats, parce que tout le monde aime les chats :</p>
+
+<p style="text-align: center;">
+	<img src="media/robot-chat.png" /></p>
+
+<p>
+	Et ça, c'est Tom M. Mitchell, qui l'a dit, répondant ainsi à la question d'Alan Turing "<strong>les machines peuvent-elles penser?</strong>" en proposant une autre question : "les machines peuvent-elles faire ce que nous, en tant qu'entités pensantes, faisons?".</p>
+
+<p>
+	Mais assez de théorie ! Dans le monde d'aujourd'hui, le vrai, où les volumes de données atteignent des extrêmes et où <strong>ce Big Data représente un défi colossal</strong> pour les entreprises, quelles sont les applications de l'apprentissage automatique ?</p>
+
+</div>
+
+<hr>
+
+<h2 class="togglable">Focus : l’E-Commerce et le Marketing Prédictif</h2>
+
+<div class="h2-content">
+
+<p>De nos jours, l’application du Machine Learning la plus répandue dans le secteur de l’e-commerce est celle du marketing prédictif et de la recommandation de produits. Les recommandations s‘imposent sur le web marchand pour plusieurs raisons :</p>
+
+<ul>
+<li><p>Elles permettent d’augmenter le panier moyen et donc le chiffre d’affaires</p></li>
+<li><p>Elles améliorent l’expérience client en facilitant l’acte d’achat</p></li>
+<li><p>Elles sont de plus en plus faciles à mettre en place grâce à la maturité des technologies (solutions largement accessibles, variées et pertinentes)</p></li>
+</ul>
+
+<p>Les produits suggérés peuvent remplir différentes fonctions :</p>
+
+<ul>
+<li><p>La <strong>découverte</strong> en mettant en avant des produits qui interessent habituellement les utilisateurs similaires</p></li>
+<li><p>La proposition d’<strong>alternatives</strong> pour ne pas perdre un potentiel acheteur qui ne trouverait pas son bonheur</p></li>
+<li><p>La proposition de produits <strong>complémentaires</strong> (le cross-selling, par exemple les accessoires pour un appareil photo)</p></li>
+</ul>
+
+<p>La recommandation est d’autant plus efficace qu’elle est personnalisée. La personnalisation exige de suggérer des produits adaptés à chaque internaute. Elle apporte une plus grande pertinence des recommandations, une meilleure expérience client et un impact sur le panier moyen plus important.</p>
+
+
+
+<h3 id="où-se-situe-le-machine-learning-dans-ces-dispositifs">Où se situe le Machine Learning dans ces dispositifs ?</h3>
+
+<p>Parmi les différents modes de recommandation de produits, l’apprentissage automatique s’appuie sur la <strong>construction de modèles prédictifs </strong>de scores de produit selon les références déjà consultées ou achetées par un internaute, et les probabilités qu’un acheteur soit convaincu par un produit après en avoir consulté d’autres. La machine va donc recommander les produits qui ont les meilleurs scores.</p>
+
+<p>Une forme d’analyse des données des fiches produits est l’<strong>analyse sémantique</strong> en temps réel, qui permet d’évaluer les goûts des utilisateurs en croisant les descriptifs des produits consultés et achetés. Ce mécanisme va donc recommander une sélection unique de produits qui correspondent le mieux au profil de l’internaute.</p>
+
+<p>Si le client n’achète pas les produits recommandés, la machine en déduit qu’il faut réduire le score de ces produits dans cette situation, car ils n’ont pas permis de convaincre l’acheteur. Au contraire, <strong>si l’acheteur est convaincu</strong>, la machine retiendra la pertinence de la suggestion, et renforcera son score à l’avenir.</p>
+
+<p>Cette méthode a une très forte influence sur les achats des internautes, et comporte des avantages et des inconvénients :</p>
+
+<ul>
+<li><p><strong>Avantages</strong> : solution automatique, individualisation/personnalisation des recommandations (1-to-1), réactivité, valorisation de la fidélité des clients, bonne gestion des nouveaux visiteurs.</p></li>
+<li><p><strong>Inconvénients</strong> : besoin de beaucoup de données, processus d’apprentissage complexe et sensible, dépendant de la richesse des qualifiants produits</p></li>
+</ul>
+
+<p><table><tr><td><img src="media/recommandations.png"/></td><td style="font-style: italic;">Globalement, il doit penser avoir des chances assez bonnes de me refourguer une carte SD...</td></tr></table></p>
+
+<p>Amazon, un des champions du Machine Learning sur ses propres sites d’e-commerce, est également un <strong>fournisseur majeur de services cloud</strong>. Depuis <a href="http://www.wired.com/2015/04/now-anyone-can-tap-ai-behind-amazons-recommendations/">septembre 2015</a>, il est directement possible de faire appel à l’intelligence artificielle d’Amazon via AWS, sa plateforme de services informatiques auprès des entreprises, ouvrant la voix à de nouvelles applications.</p>
+
+</div>
+
+<hr>
+
+<h2 class="togglable">Les grands principes de fonctionnement</h2>
+
+<div class="h2-content">
+
+<p>
+	Le <em>Machine Learning </em>se divise en trois types d'apprentissages automatiques :</p>
+
+<h3>
+	L'apprentissage par renforcement</h3>
+
+<p>
+	Lorsqu'il s'agit d'optimiser une stratégie de décision face à une multitude de situations possibles, on utilise l'<a target="_blank" href="https://fr.wikipedia.org/wiki/Apprentissage_par_renforcement"><strong>apprentissage par renforcement</strong></a>. Dans le jeu de dames, il existe 500 milliards de milliards de situations de jeu possibles. Avec les moyens de l'époque d'Arthur Samuel, il était impossible d'analyser chaque situation de plateau, et la seule réponse possible était de trouver l'option la plus prometteuse <em>statistiquement</em>.</p>
+
+<p>
+	C'est le même type de problème qui se pose à la Google Car : le nombre de situations dans laquelle le véhicule peut se retrouver est infiniment grand. Le véhicule s'améliore donc, non pas en envisageant chaque situation possible, mais en affinant ses modèles statistiques grâce à son expérience.</p>
+
+<h3>
+	L'apprentissage supervisé</h3>
+
+<p>
+	Lorsqu'il ne s'agit pas de prendre la "meilleure décision possible", mais plutôt de répondre à une question fermée, telle que "y a-t-il un chat dans cette image?", on utilise l'<a target="_blank" href="https://fr.wikipedia.org/wiki/Apprentissage_supervis%C3%A9"><strong>apprentissage supervisé</strong></a>. Le principe est de nourrir la machine avec des couples de question-réponse, par exemple avec des milliers d'images labellisées "avec chat", et des milliers d'images labellisées "sans chat". </p>
+
+<p>
+	Cette base de données est appelée <strong>ensemble d'apprentissage</strong>. Plus elle est complète, plus l'ordinateur est pertinent. L'apprentissage supervisée est particulièrement utilisée dans la reconnaissance d'images ou de sons, et dans la classification de données, par exemple pour identifier le spam dans une boîte mail.</p>
+
+<h3>
+	L'apprentissage non-supervisé</h3>
+
+<p>
+	Enfin, si l'on souhaite analyser des quantités importantes de données pour y trouver des tendances et des motifs, sans savoir ce qu'on cherche précisément, on fera appel à l'<a target="_blank" href="https://fr.wikipedia.org/wiki/Apprentissage_non_supervis%C3%A9">apprentissage non-supervisé</a>.</p>
+
+<p>
+	Contrairement à l'apprentissage supervisé, on ne propose ici pas de solutions à l'ordinateur. On lui demande de tirer lui-même ses conclusions sur les manières de trier, de regrouper ou de relier ces données. Plus complexe techniquement et nécessitant une expertise dans la réalisation, l'application de l'apprentissage non-supervisé reste rare dans le monde réel.</p>
+
+</div>
+
+<hr>
+
+<h2>Pour aller plus loin...</h2>
 
 <div id="freewall">
 	
@@ -24,7 +148,7 @@
 				<div class="title">Comment apprendre aux ordinateurs à comprendre des images</div>
 			</div>
 			<div class="back" >
-				<a href="https://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=fr" target="_blank">
+				<a target="_blank" href="https://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=fr">
 					<img src="media/fei-fei-li.png"/>
 				</a>
 			</div>
@@ -41,7 +165,7 @@
 				<div class="title">Les conséquences à la fois merveilleuses et effrayantes des machines qui apprennent</div>
 			</div>
 			<div class="back" >
-				<a href="https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=fr" target="_blank">
+				<a target="_blank" href="https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=fr">
 					<img src="media/jeremy-howard.png"/>
 				</a>
 			</div>
@@ -130,8 +254,25 @@
 
 </div>
 
+<style>
+	
+	.h2-content { display: none; }
+	.h2-content > p:first-child { margin-top: 0; }
+	.h2-content > img { max-width: 100% }
+	.h2-content table td { padding: .5em; }
+	.h2-content blockquote { margin: 1em 0; padding: 1px 1em 1px 2em; border-left: .5em solid #ccc; color: #666; }
+
+	h2.togglable { position: relative; transition: all .5s;}
+	h2.togglable:hover { cursor: pointer; margin-left: 1em; }
+	h2.togglable:after { content: "+"; position: absolute; right: 0; }
+	h2.togglable.active:after { content: "-"; position: absolute; right: 0; }
+
+</style>
+
 <script>
+
 	$(function() {	
+
 		var wall = new freewall("#freewall");
 		wall.fitWidth();
 		wall.reset({
@@ -142,10 +283,6 @@
 			}
 		});
 		
-		wall.container.find('.brick span').load(function() {
-			wall.fitWidth();
-		});
-
 		// for mobile
 		$('.brick').click(function(){
 			$(this).toggleClass('active')
@@ -155,7 +292,13 @@
 			$(this).removeClass('active')
 		})
 
+		$('h2.togglable').click(function(){
+			$(this).toggleClass('active')
+			$(this).next('.h2-content').slideToggle(3000)
+		})
+
 	});
+
 </script>
 
 </body>
