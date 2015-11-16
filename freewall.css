@@ -6,15 +6,22 @@
 
 .brick {
 	width: 180px;
-	height: 150x;
+	height: 150px;
 	transition: .6s transform !important;
 	perspective: 1000;
 }
+
+.brick p a { text-decoration: none; color: navy !important; }
+.brick p a:after { content: " →"; }
 
 .brick.video { width: 400px; height: 225px; }
 .brick.video .back { padding: 0; }
 .brick.video .back img { height: 100%; width: 100%; }
 .brick .front img:first-child { margin-top: 5px; }
+
+.brick.video.small { width: 180px; height: 150px; }
+
+.brick.longer { height: 300px; }
 
 .brick .title {
 	text-transform: uppercase;
@@ -59,3 +66,15 @@
 .brick:hover,
 .brick.active { cursor: pointer; transform: rotate(-2deg) scale(1.25); z-index: 100; }
 .brick.active:after { content: "x"; position: absolute; top: 0; right: .5em; color: white; text-shadow: 0px 1px 5px black; font-size: 2em; }
+
+#overlay {
+	visibility: hidden;
+	position: fixed; top: 0; left: 0;
+	height: 100%; width: 100%;
+	background-color: rgba(0,0,0,0.2); }
+
+#overlay:after {
+	position: absolute;
+	top: 10px; right: 10px;
+	content: "x";
+}

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="http://brachamul.github.io/sequoia-image-animator/freewall.js"></script>
-<link href="http://brachamul.github.io/sequoia-image-animator/freewall.css" rel='stylesheet' type='text/css'>
+<link href="freewall.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body style="width: 600px; margin: auto; line-height: 1.5; font-family: 'Open Sans', sans-serif;">
@@ -141,7 +141,39 @@
 <h2>Pour aller plus loin...</h2>
 
 <div id="freewall">
+
+	<div class="brick longer" ontouchstart="this.classList.toggle('hover');">
 	
+		<div class="flipper">
+			<div class="front">
+				<img src="media/google.png" style="margin-bottom: -10px" />
+				<hr>
+				<div class="title">Google labellise une photo de personne noire "gorille"</div>
+			</div>
+			<div class="back">
+				<p><a target="_blank" href="http://www.computerworlduk.com/galleries/cloud-computing/7-times-google-said-sorry-over-machine-learning-blunders-3618498/#1">Et <strong>7</strong> autres bourdes de l'intelligence artificielle de Google</a></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="brick video" ontouchstart="this.classList.toggle('hover');">
+
+		<div class="flipper">
+			<div class="front">
+				<img src="media/ibm.png"/>
+				<hr>
+				<div class="title">Watson, la machine qui révolutionne la médecine et qui gagne aux jeux télévisés</div>
+			</div>
+			<div class="back" >
+				<a target="_blank" href="https://www.youtube.com/watch?v=_Xcmh1LQB9">
+					<img src="media/watson.png"/>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
 	<div class="brick video" ontouchstart="this.classList.toggle('hover');">
 
 		<div class="flipper">
@@ -176,86 +208,60 @@
 
 	</div>
 
-	<div class="brick" ontouchstart="this.classList.toggle('hover');">
-	
+	<div class="brick video small" ontouchstart="this.classList.toggle('hover');">
+
 		<div class="flipper">
 			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
+				<img src="media/facebook.png"/>
+				<hr>
+				<div class="title">Facebook sait que ce chien joue au frisbee</div>
 			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
+			<div class="back" >
+				<a target="_blank" href="https://www.youtube.com/watch?v=U_Wgc1JOsBk">
+					<img src="media/facebook-reconnaissance.png"/>
+				</a>
 			</div>
 		</div>
 
 	</div>
 
-	<div class="brick" ontouchstart="this.classList.toggle('hover');">
-	
+	<div class="brick video small" ontouchstart="this.classList.toggle('hover');">
+
 		<div class="flipper">
 			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
+				<img src="media/amazon.png" style="margin-bottom: -10px;" />
+				<hr>
+				<div class="title">Du <em>Machine Learning</em> à la découpe</div>
 			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
+			<div class="back" >
+				<a target="_blank" href="https://www.youtube.com/watch?v=PAHU8tPA7xs">
+					<img src="media/amazon-aws.png"/>
+				</a>
 			</div>
 		</div>
 
 	</div>
 
-	<div class="brick" ontouchstart="this.classList.toggle('hover');">
-	
+	<div class="brick video" ontouchstart="this.classList.toggle('hover');">
+
 		<div class="flipper">
 			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
+				<img src="media/microsoft.png" style="margin-bottom: -5px;"/>
+				<hr>
+				<div class="title">La Kinect traduit en direct les langues des signes</div>
 			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
+			<div class="back" >
+				<a target="_blank" href="https://www.youtube.com/watch?v=HnkQyUo3134">
+					<img src="media/traduction-signes.png"/>
+				</a>
 			</div>
 		</div>
 
 	</div>
-
-	<div class="brick" ontouchstart="this.classList.toggle('hover');">
-	
-		<div class="flipper">
-			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
-			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="brick large" ontouchstart="this.classList.toggle('hover');">
-	
-		<div class="flipper">
-			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
-			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="brick" ontouchstart="this.classList.toggle('hover');">
-	
-		<div class="flipper">
-			<div class="front">
-				<div class="title">Facebook sait que le bébé se lave les dents</div>
-			</div>
-			<div class="back">
-				<div class="title">Contenu au dos !! Yeah baby come on !</div>
-			</div>
-		</div>
-
-	</div>
-
 
 </div>
+
+<div id="overlay"></div>
 
 <style>
 	
