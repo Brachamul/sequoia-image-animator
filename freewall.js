@@ -1264,7 +1264,7 @@
     
     window.Freewall = window.freewall = Freewall;
 
-    $("head").append("<link rel='stylesheet' href='https://brachamul.github.io/sequoia-image-animator/frewall.css' type='text/css' media='screen'>");
+    $("head").append("<link rel='stylesheet' href='https://brachamul.github.io/sequoia-image-animator/freewall.css' type='text/css' media='screen'>");
 
     var wall = new freewall("#freewall");
     wall.fitWidth();
