@@ -11,5 +11,5 @@ $('.brick:after').click(function(){
 
 $('h2.togglable').click(function(){
     $(this).toggleClass('active')
-    $(this).next('.h2-content').slideToggle(3000)
+    $(this).next('.h2-content').slideToggle(2000)
 })
