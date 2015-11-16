@@ -66,3 +66,16 @@
 .brick:hover,
 .brick.active { cursor: pointer; transform: rotate(-2deg) scale(1.25); z-index: 100; }
 .brick.active:after { content: "x"; position: absolute; top: 0; right: .5em; color: white; text-shadow: 0px 1px 5px black; font-size: 2em; }
+
+#potato a { text-decoration: none; }
+
+.h2-content { display: none; }
+.h2-content > p:first-child { margin-top: 0; }
+
+.h2-content table td { padding: .5em; }
+.h2-content blockquote { margin: 1em 0; padding: 1px 1em 1px 2em; border-left: .5em solid #ccc; color: #666; }
+
+h2.togglable { position: relative; transition: all .5s;}
+h2.togglable:hover { cursor: pointer; margin-left: 1em; }
+h2.togglable:after { content: "+"; position: absolute; right: 0; }
+h2.togglable.active:after { content: "-"; position: absolute; right: 0; }
