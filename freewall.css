@@ -4,8 +4,6 @@
 
 #freewall * { box-sizing: border-box; }
 
-#freewall a { text-decoration: none; }
-
 .brick {
 	width: 180px;
 	height: 150px;
