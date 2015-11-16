@@ -67,7 +67,8 @@
 .brick.active { cursor: pointer; transform: rotate(-2deg) scale(1.25); z-index: 100; }
 .brick.active:after { content: "x"; position: absolute; top: 0; right: .5em; color: white; text-shadow: 0px 1px 5px black; font-size: 2em; }
 
-#potato a { text-decoration: none; }
+#potato a { text-decoration: none; border-bottom: 1px dashed; }
+#potato #freewall a { border: none; }
 
 .h2-content { display: none; }
 .h2-content > p:first-child { margin-top: 0; }
