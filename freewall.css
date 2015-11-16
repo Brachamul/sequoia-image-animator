@@ -76,7 +76,7 @@
 .h2-content table td { padding: .5em; }
 .h2-content blockquote { margin: 1em 0; padding: 1px 1em 1px 2em; border-left: .5em solid #ccc; color: #666; }
 
-h2.togglable { position: relative; transition: all .5s;}
+h2.togglable { position: relative; transition: all .5s; padding-right: 1em; }
 h2.togglable:hover { cursor: pointer; margin-left: 1em; }
 h2.togglable:after { content: "+"; position: absolute; right: 0; }
 h2.togglable.active:after { content: "-"; position: absolute; right: 0; }
