@@ -1263,5 +1263,7 @@
     };
     
     window.Freewall = window.freewall = Freewall;
+
+    $("head").append("<link rel='stylesheet' href='https://brachamul.github.io/sequoia-image-animator/frewall.css' type='text/css' media='screen'>");
  
 })(window.Zepto || window.jQuery);
