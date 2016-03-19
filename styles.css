@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
 .bigimage-deploys {
 	max-height: 120px;
 	overflow: hidden;
@@ -23,3 +25,12 @@
 }
 
 .bigimage-deploys.active:after { opacity: 0; }
+
+.wpb_text_column h2,
+.wpb_text_column h3 {
+	font-style: 'Roboto Slab', serif;
+}
+/*
+<p style="color: #008080; font-size: 24px; margin-bottom: 5px !important; text-align: left; margin-left: 10px;"><img class="alignnone wp-image-2390" src="http://sequoia.id-solucom.fr/wp-content/uploads/2015/08/Fast-Forward-100.png" alt="Fast Forward-100" width="19" height="19">&nbsp;  WAT, LE PORTAIL COLLABORATIF DU GROUPE TOTAL</p>
+<hr>
+*/
