@@ -27,10 +27,22 @@
 .bigimage-deploys.active:after { opacity: 0; }
 
 .wpb_text_column h2,
-.wpb_text_column h3 {
-	font-style: 'Roboto Slab', serif;
+.wpb_text_column h3,
+.wpb_text_column h4,
+.wpb_text_column h5, {
+	font-family: 'Roboto Slab', serif;
 }
-/*
-<p style="color: #008080; font-size: 24px; margin-bottom: 5px !important; text-align: left; margin-left: 10px;"><img class="alignnone wp-image-2390" src="http://sequoia.id-solucom.fr/wp-content/uploads/2015/08/Fast-Forward-100.png" alt="Fast Forward-100" width="19" height="19">&nbsp;  WAT, LE PORTAIL COLLABORATIF DU GROUPE TOTAL</p>
-<hr>
-*/
+
+.wpb_text_column h2 {
+	color: rgb(11, 78, 111);
+	font-size: 2.4em;
+	padding : 0 2em 1em;
+	text-align: center;
+	border-bottom: .1em solid rgb(11, 78, 111);
+	margin-top: 2em;
+}
+
+.wpb_text_column h3 { color: rgb(0, 128, 128); }
+
+#unit_content { margin: 0; padding: 1rem 8rem; }
+.unit_wrap { box-shadow: 0 0 4rem -1rem #999; }
