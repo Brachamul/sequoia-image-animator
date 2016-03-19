@@ -45,10 +45,12 @@
 
 .wpb_text_column h3 { color: rgb(0, 128, 128); font-size: 2em; }
 
-.wpb_text_column p { 
+.wpb_text_column p, .wpb_text_column ul { 
 	line-height: 1.8;
 	font-size: 1.2em;
 }
+
+.wpb_text_column li { margin-bottom: 10px; }
 
 .wpb_text_column p strong { color: #008080; }
 
