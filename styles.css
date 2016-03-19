@@ -43,12 +43,14 @@
 	margin-bottom: 1em;
 }
 
-.wpb_text_column h3 { color: rgb(0, 128, 128); }
+.wpb_text_column h3 { color: rgb(0, 128, 128); font-size: 2em; }
 
 .wpb_text_column p { 
 	line-height: 1.8;
 	font-size: 1.2em;
 }
+
+.wpb_text_column p strong { color: #008080; }
 
 #unit { font-style: italic; }
 #unit_content { margin: 0; padding: 1rem 8rem; }
