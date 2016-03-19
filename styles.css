@@ -40,9 +40,16 @@
 	text-align: center;
 	border-bottom: .1em solid rgb(11, 78, 111);
 	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .wpb_text_column h3 { color: rgb(0, 128, 128); }
 
+.wpb_text_column p { 
+	line-height: 1.8;
+	font-size: 1.2em;
+}
+
+#unit { font-style: italic; }
 #unit_content { margin: 0; padding: 1rem 8rem; }
 .unit_wrap { box-shadow: 0 0 4rem -1rem #999; }
