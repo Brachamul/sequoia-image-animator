@@ -63,5 +63,5 @@
 .unit_wrap { box-shadow: 0 0 4rem -1rem #999; }
 
 .components { text-align: center; margin-bottom: 10px; }
-.components p { display: inline-block; width: calc(50% - 30px); min-width: 240px; vertical-align: top; margin: 10px 15px 20px 0; }
+.components p { display: inline-block; width: calc(50% - 30px); min-width: 120px; vertical-align: top; margin: 10px 15px 20px 0; }
 .components i { color: rgb(11, 78, 111); font-size: 3em; display: block; }
